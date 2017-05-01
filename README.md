@@ -2,7 +2,7 @@
 
 Purpose: Create a simple sinatra app to allow the user to play rock, paper, scissors in their browser.
 
-#User stories
+# User stories
 
 - You should be able to go to /rock/scissors and return the string "Rock wins!" to the page, for example.
 
