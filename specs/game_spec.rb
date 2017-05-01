@@ -8,6 +8,8 @@ class TestGame < MiniTest::Test
     @game1 = Game.new('scissors', 'rock')
     @game2 = Game.new('paper', 'rock')
     @game3 = Game.new('paper', 'scissors')
+    @game4 = Game.new('rock', 'scissors')
+    @game5 = Game.new('scissors', 'paper')
   end
 
   def test_exists_class_rps
@@ -26,5 +28,12 @@ class TestGame < MiniTest::Test
     assert_equal('Scissors wins!', @game3.win)
   end
 
+  def test_rock_scissors
+    assert_equal('Rock wins!', @game4.win)
+  end
+
+  def test_scissor_paper
+    assert_equal('Scissors wins!', @game5.win)
+  end
 
 end
